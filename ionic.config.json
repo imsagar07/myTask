@@ -1,0 +1,7 @@
+{
+  "name": "myTask",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

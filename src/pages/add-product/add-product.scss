@@ -1,0 +1,93 @@
+page-add-product {
+   
+    .btn{
+        margin-top: 20px;
+        text-align: center;
+    }
+  
+    .input-style {
+        color: black;
+        font-family: "MontserratR"!important;
+        font-size: small;
+        height: fit-content;
+        margin: 0%;
+    }
+    .text-input-md {
+        margin: 0px;
+    }
+
+    .item-images {
+        height: 20px;
+        width: 20px;
+        margin: auto;
+    }
+   
+    .center-verticle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        vertical-align: 0%;
+        font-family: "MontserratR"!important;
+    }
+
+    .card-style {
+        padding: 1%;
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+
+    .error-text-span {
+        color: red;
+        font-family: "MontserratR"!important;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: x-small;
+    }
+
+    .toolbar-button {
+        height: 60px;
+    }
+    .row-icon-input {
+        border: 1px solid;
+        border-radius: 20px;
+        border-color: #488aff;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        vertical-align: 0%;
+        font-family: "MontserratR"!important;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .row-icon-input-textarea {
+        border: 1px solid;
+        border-radius: 15px;
+        border-color: #488aff;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        vertical-align: 0%;
+        font-family: "MontserratR"!important;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .select-md .select-icon .select-icon-inner {
+        color:  #488aff !important;
+    }
+    .cust-ion-select {
+        max-width: 100% !important;
+        font-family: "MontserratR"!important;
+        color: #488aff;
+        width: 100%;
+        margin: 0%;
+        padding: 5px;
+    }
+    
+
+}

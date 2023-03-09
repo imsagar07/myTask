@@ -1,0 +1,47 @@
+page-apply-filter {
+    .btn{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .row-icon-input {
+        border: 1px solid;
+        border-radius: 20px;
+        border-color: #488aff;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        vertical-align: 0%;
+        font-family: "MontserratR"!important;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 35px;
+        margin-top: 10px;
+    }
+
+    .row-icon-input-textarea {
+        border: 1px solid;
+        border-radius: 15px;
+        border-color: #488aff;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        vertical-align: 0%;
+        font-family: "MontserratR"!important;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .select-md .select-icon .select-icon-inner {
+        color:  #488aff !important;
+    }
+    .cust-ion-select {
+        max-width: 100% !important;
+        font-family: "MontserratR"!important;
+        color: #488aff;
+        width: 100%;
+        margin: 0%;
+        padding: 5px;
+    }
+}

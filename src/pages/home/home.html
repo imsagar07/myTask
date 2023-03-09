@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Products
+    </ion-title>
+    <ion-buttons right (click)="openFilter()">
+      <button ion-button icon-only >
+        <ion-icon name="md-funnel"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="!isProduct" class="noProd">
+    Oops no Products Found.
+    <p>
+      Please Add products by clicking bottom right button!.
+    </p>
+  </div>
+
+  <div *ngIf="isProduct">
+    <ion-list>
+      <ion-item *ngFor="let item of _showproductList">
+        <ion-avatar item-start>
+          <img [src]="item?._pimage">
+        </ion-avatar>
+        <h2>{{item?._pname}}</h2>
+        <p>Dist: {{item?.distance}} Km, {{item?._pType}}</p>
+        <p>Rs {{item?._price}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-fab bottom right (click)="addProductPage()">
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AddProductPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add product</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ng-container class="card-style">
+  <ion-row no-padding no-margin class="row-icon-input">
+    <ion-col col-12 no-padding no-margin>
+      <ion-input placeholder="Product name" type="text" [(ngModel)]="model._pname">
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row no-padding no-margin class="row-icon-input">
+    <ion-col col-12 no-padding no-margin>
+      <ion-input placeholder="Price" type="number" maxlength="3" [(ngModel)]="model._price">
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row no-padding no-margin class="row-icon-input margin-row margin-top-row">
+    <ion-col col-12 no-padding no-margin>
+      <ion-select interface='popover' placeholder="Please select Type" [(ngModel)]="model._pType" class="cust-ion-select">
+        <ion-option value="Mobile" selected="true">Mobile</ion-option>
+        <ion-option value="Laptop">Laptop</ion-option>
+        <ion-option value="Display">Display</ion-option>
+      </ion-select>
+    </ion-col>
+  </ion-row>
+  <ion-row no-padding no-margin class="row-icon-input-textarea margin-row margin-top-row">
+    <ion-textarea rows=3 type="text" maxlength="200" placeholder="Description.." [(ngModel)]="model._pdescription">
+    </ion-textarea>
+  </ion-row>
+  <ion-row no-padding no-margin class="row-icon-input" (click)="selectLocationPage()">
+    <ion-col col-12 no-padding no-margin>
+      <ion-input placeholder="Select produtc location" type="text" [(ngModel)]="_address" readonly>
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-avatar slot="start">
+        <img [src]="model._pimage"> 
+      </ion-avatar>
+    </ion-col>
+    <ion-col>
+      <button ion-button round (click)="uploadImage()">Add image</button>
+    </ion-col>
+  </ion-row>
+</ng-container>
+  <div class="btn">
+    <button ion-button round (click)="submit()">Submit</button>
+  </div>
+</ion-content>
