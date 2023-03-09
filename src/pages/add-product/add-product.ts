@@ -90,7 +90,7 @@ export class AddProductPage {
       alert('Please select type');
       return false;
     }
-    if(this.model._address == ''){
+    if(this._address == ''){
       alert('Please select product location');
       return false;
     }
